@@ -2,7 +2,13 @@
 [![GitHub version](https://badge.fury.io/gh/eisbehr-%2Fjquery.lazy.svg)](http://github.com/eisbehr-/jquery.lazy)
 [![NPM version](https://badge.fury.io/js/jquery-lazy.svg)](http://www.npmjs.org/package/jquery-lazy)
 [![Bower version](https://badge.fury.io/bo/jquery-lazy.svg)](http://bower.io/search/?q=jquery-lazy)
-[![Dependency version](https://david-dm.org/eisbehr-/jquery.lazy.png)](https://david-dm.org/eisbehr-/jquery.lazy)
+[![Dependencies Status](https://david-dm.org/eisbehr-/jquery.lazy/status.svg)](https://david-dm.org/eisbehr-/jquery.lazy)
+[![devDependencies Status](https://david-dm.org/eisbehr-/jquery.lazy/dev-status.svg)](https://david-dm.org/eisbehr-/jquery.lazy?type=dev)
+
+---
+
+[![JetBrains & PhpStorm](http://jquery.eisbehr.de/lazy/images/git_logo_jb_ps.png)](https://jetbrains.com/phpstorm)  
+_This project is friendly supported by [JetBrains](https://jetbrains.com) & [PhpStorm](https://jetbrains.com/phpstorm)!_
 
 ---
 
@@ -59,12 +65,12 @@ Some examples below:
 Lazy and all plugins are available over [cdnjs](http://cdnjs.com) and [jsDelivr](http://jsdelivr.com) CDN and can directly included to every page.
 ```HTML
 <!-- jsDeliver -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.3/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.3/jquery.lazy.plugins.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/eisbehr-/jquery.lazy@1.7.7/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/eisbehr-/jquery.lazy@1.7.7/jquery.lazy.plugins.min.js"></script>
 
 <!-- cdnjs -->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.3/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.3/jquery.plugins.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.7/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.7/jquery.lazy.plugins.min.js"></script>
 ```
 
 #### Self-Hosted
@@ -131,6 +137,7 @@ instance.config(entryName[, newValue]); // get or set an configuration entry
 instance.addItems(items); // add new items to current instance
 instance.getItems(); // get all unhandled items left of current instance
 instance.update([useThrottle]); // loads all elements in current viewport
+instance.force(items); // force loading specific items, ignoring the viewport
 instance.loadAll(); // loads all remaining available elements from this instance
 instance.destroy(); // unbinds all events and stop execution directly
 ```
